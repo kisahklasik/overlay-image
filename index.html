@@ -36,7 +36,7 @@
         height: 300px !important; 
         border: 3px solid gray;
     }
-    img, canvas {
+    #c {
         width: 100%;
         height: auto;
     }
@@ -79,8 +79,8 @@ document.getElementById("uploadBtn").onchange = function () {
 document.getElementById("uploadFile").value = this.files[0].name;
 };
 var canvas = new fabric.Canvas('c');
-canvas.setWidth(300);
-canvas.setHeight(300);
+canvas.setWidth(1024);
+canvas.setHeight(1024);
                                     
 var canvasWrapper = document.getElementById('c');
 var canvasWrapperWidth = canvasWrapper.clientWidth;
@@ -100,7 +100,7 @@ canvas.setOverlayImage(img, canvas.renderAll.bind(canvas));
 function imageIsLoaded(e) {
 fabric.Image.fromURL(e.target.result,function(img){
 var aspectRatio = 1024/1024;
-var factor = 300 / img.width;
+var factor = 1024 / img.width;
 img.set({
 scaleX: factor,
 scaleY: factor 
