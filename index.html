@@ -109,8 +109,8 @@ canvas.add(img);
 canvas.item(0).set({
 borderColor: 'gray',
 cornerColor: 'black',
-cornerSize: 70,
-borderScaleFactor: 10,
+cornerSize: 30,
+borderScaleFactor: 5,
 hasBorders: true,
                                                 
 rotatingPointOffset:200,
@@ -124,7 +124,7 @@ canvas.sendToBack(img);
 };
 $("#download").click(function(){
 $("#c").get(0).toBlob(function(blob){
-saveAs(blob, "Download.png");
+saveAs(blob, "twibbon.png");
 });
 });
 </script>
