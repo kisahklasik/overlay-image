@@ -30,6 +30,10 @@
         width: 100%;
         height: auto;
     }
+    .fluid {
+        width: 100%;
+        height: auto;
+    }
     .wrapper{
         width: 100%;
         height: auto;
@@ -57,7 +61,11 @@
 <body>
 <main>
     <h1>Example Domain</h1>
-    <p><canvas id="c" class="fluid"></canvas></p>
+    <p>
+    <div class="fluid">
+    <canvas id="c"></canvas>
+    </div>
+    </p>
     <p>
     <input type="file" id="uploadFile" accept="image/png, image/jpeg" />
     <input type="file" id="uploadBtn" style="display: none"
