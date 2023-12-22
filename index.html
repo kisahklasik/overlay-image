@@ -30,13 +30,9 @@
         width: 100%;
         height: auto;
     }
-    .fluid {
-        width: 100%;
-        height: auto;
-    }
     .wrapper{
         width: 100%;
-        height: auto;
+        height: 100%;
         box-shadow:0 0 20px 0 rgb(102, 101, 89);
         background: rgb(225, 243, 245);
     /* display: grid;
@@ -78,8 +74,8 @@ document.getElementById("uploadBtn").onchange = function () {
 document.getElementById("uploadFile").value = this.files[0].name;
 };
 var canvas = new fabric.Canvas('c');
-canvas.setWidth(500);
-canvas.setHeight(500);
+canvas.setWidth(400);
+canvas.setHeight(400);
                                     
 var canvasWrapper = document.getElementById('c');
 var canvasWrapperWidth = canvasWrapper.clientWidth;
