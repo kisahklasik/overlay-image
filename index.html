@@ -41,6 +41,8 @@
     }
     
     .wrapper{
+        width: 100%;
+        height: 100%;
         box-shadow:0 0 20px 0 rgb(102, 101, 89);
         background: rgb(225, 243, 245);
     /* display: grid;
@@ -82,9 +84,7 @@ canvas.setWidth(1024);
 canvas.setHeight(1024);
                                     
 var canvasWrapper = document.getElementById('c');
-var heightRatio = 1.5;
-canvas.height = canvas.width * heightRatio;
-// var canvasWrapperWidth = canvasWrapper.clientWidth;
+var canvasWrapperWidth = canvasWrapper.clientWidth;
 $(function () {
 $(":file").change(function () {
 if (this.files && this.files[0]) {
