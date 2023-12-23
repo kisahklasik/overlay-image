@@ -89,6 +89,7 @@ reader.readAsDataURL(this.files[0]);
 });
 fabric.Image.fromURL('badut.png',function(img){
 img.scaleToWidth(canvas.getWidth());
+canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 100, left: 100 }));
 canvas.setOverlayImage(img, canvas.renderAll.bind(canvas));
 });
 function imageIsLoaded(e) {
@@ -123,7 +124,6 @@ saveAs(blob, "twibbon.png");
 });
 canvas.selection = false;
 this.__canvases.push(canvas);
-canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 100, left: 100 }));
 </script>
 </body>
 </html>
