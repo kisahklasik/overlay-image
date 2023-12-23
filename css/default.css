@@ -27,6 +27,6 @@ button, .button {
 }
 
 button[type="submit"], .button\:type-submit {
-  background: var(--linkColor);
-  color: var(--backgroundColor);
+  background: #0463cb;
+  color: #fdfdfd;
 }
