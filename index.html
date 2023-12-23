@@ -121,6 +121,8 @@ $("#c").get(0).toBlob(function(blob){
 saveAs(blob, "twibbon.png");
 });
 });
+canvas.selection = false;
+this.__canvases.push(canvas);
 </script>
 </body>
 </html>
