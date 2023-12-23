@@ -20,3 +20,4 @@ a:active{color:#000}
 button,textarea,input{font-family: system-ui, sans-serif;color: #303030;}
 button, .button{padding: 0.8em 1.6em;background: #f0eeed;border: 0;font-weight: 600;cursor: pointer;border-radius: 2px;}
 button[type="submit"], .button\:type-submit {background: #0463cb;color: #fdfdfd;}
+textarea,input {margin: 0.4em 0;padding: 0.8em;background: #f0eeed;border: 0;}
