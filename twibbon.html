@@ -1,98 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Twibbon Generator</title>
-<link rel="stylesheet" href="css/styles.css">
-<style>
-img, canvas {
-  width: 100%;
-  height: auto;
-}
-.wrapper{
-  width: 100%;
-  height: 100%;
-  box-shadow:0 0 20px 0 rgb(102, 101, 89);
-  background: rgb(225, 243, 245);
-  /* display: grid;
-  grid-template-columns: 1fr  */
-  /* background: rgb(225, 243, 245); */
-
-}
-</style>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/fabric.min.js"></script>
-<script src="js/filesaver.js"></script>
-<script src="js/blob.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twibbon Generator</title>
+  <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>Inspirasi dunia sekitar Anda.</h1>
-<p>Ini adalah situs web tempat Anda dapat menambahkan foto ke bingkai.</p>
-<p><canvas id="c"></canvas></p>
-<p>Pastikan gambar yang di upload memiliki ukuran.</p>
-<p>
-<input type="file" id="uploadFile" accept="image/png, image/jpeg" />
-<input type="file" id="uploadBtn" style="display: none">
-</p>
-  
-<p><button id="download">DOWNLOAD</button></p>
-
-<script>
-document.getElementById("uploadBtn").onchange = function () {
-document.getElementById("uploadFile").value = this.files[0].name;
-};
-var canvas = new fabric.Canvas('c');
-canvas.setWidth(500);
-canvas.setHeight(500);
-canvas.backgroundColor = 'rgba(0,0,255,0.3)';
-    
-var canvasWrapper = document.getElementById('c');
-var canvasWrapperWidth = canvasWrapper.clientWidth;
-$(function () {
-$(":file").change(function () {
-if (this.files && this.files[0]) {
-var reader = new FileReader();
-reader.onload = imageIsLoaded;
-reader.readAsDataURL(this.files[0]);
-}
-});
-});
-fabric.Image.fromURL('badut.png',function(img){
-img.scaleToWidth(canvas.getWidth());
-canvas.setOverlayImage(img, canvas.renderAll.bind(canvas));
-});
-function imageIsLoaded(e) {
-fabric.Image.fromURL(e.target.result,function(img){
-var aspectRatio = 400/400;
-var factor = 150 / img.width;
-img.set({
-scaleX: factor,
-scaleY: factor 
-});
-canvas.add(img);
-canvas.item(0).set({
-borderColor: 'red',
-cornerColor: 'green',
-cornerSize: 10,
-borderScaleFactor: 2,
-hasBorders: true,
-                                                
-rotatingPointOffset:200,
-padding:10, 
-transparentCorners: true
-});
-canvas.setActiveObject(canvas.item(0));
-this.__canvases.push(canvas);
-canvas.sendToBack(img);
-});
-};
-$("#download").click(function(){
-$("#c").get(0).toBlob(function(blob){
-saveAs(blob, "twibbon.png");
-});
-});
-canvas.selection = false;
-this.__canvases.push(canvas);
-</script>
+  <header>
+    <h1>muan.css</h1>
+  </header>
+  <main>
+    <h2>Text</h2>
+    <p>Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Molestiae mollitia cum adipisci autem <em>eum exercitationem</em> a sequi similique cumque asperiores corporis <a>neque itaque</a>, nobis nemo obcaecati consequatur. Tenetur, illo quaerat.</p>
+    <blockquote>Lorem ipsum, dolor sit amet consectetur <code>adipisicing</code> elit. Blanditiis vero tempora iusto eligendi ipsum saepe commodi.</blockquote>
+    <pre>
+input {
+  color: #ff0000;
+}</pre>
+    <h2>Form</h2>
+    <form>
+      <fieldset>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+      </fieldset>
+      <fieldset>
+        <label>How goes?</label>
+        <label for="fine1">
+          <input type="radio" name="goes" id="fine1" checked>
+          Fine
+        </label>
+        <label for="fine2">
+          <input type="radio" name="goes" id="fine2">
+          Fine
+        </label>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
 </body>
 </html>
