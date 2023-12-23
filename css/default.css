@@ -17,3 +17,16 @@ a:active{color:#000}
 ::selection{background:#ccc}
 #gravatar{position:relative;float:right;margin-bottom:1em;margin-left:1em;border:1px solid #ddd}
 @media all and (max-width:500px){article{padding:1em}body{font-size:1em}}
+button, .button {
+  padding: 0.8em 1.6em;
+  background: #f0eeed;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button[type="submit"], .button\:type-submit {
+  background: var(--linkColor);
+  color: var(--backgroundColor);
+}
