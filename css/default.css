@@ -17,6 +17,12 @@ a:active{color:#000}
 ::selection{background:#ccc}
 #gravatar{position:relative;float:right;margin-bottom:1em;margin-left:1em;border:1px solid #ddd}
 @media all and (max-width:500px){article{padding:1em}body{font-size:1em}}
+button,
+textarea,
+input {
+  font-family: system-ui, sans-serif;
+  color: #303030;
+}
 button, .button {
   padding: 0.8em 1.6em;
   background: #f0eeed;
