@@ -125,6 +125,12 @@ saveAs(blob, "twibbon.png");
 });
 canvas.selection = false;
 this.__canvases.push(canvas);
+fabricCanvas.setDimensions({
+  width: '100%',
+  height: '100%'
+},{
+  cssOnly: true
+});
 </script>
 </body>
 </html>
