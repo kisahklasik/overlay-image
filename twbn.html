@@ -283,5 +283,14 @@ fabricCanvas.setDimensions({
 <script>
 document.getElementById("copyright").innerHTML = new Date().getFullYear();
 </script>
+<script>
+function validateForm() {
+  var x = document.forms["file"]["image"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
 </body>
 </html>
