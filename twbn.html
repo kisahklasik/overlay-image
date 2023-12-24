@@ -290,5 +290,18 @@ fabricCanvas.setDimensions({
 <script>
 document.getElementById("copyright").innerHTML = new Date().getFullYear();
 </script>
+<script>
+$('.upload').live("click",function()
+{
+    var imgVal = $('#uploadImage').val();
+    if(imgVal=='')
+    {
+        alert("empty input file");
+
+    }
+    return false;
+
+});
+</script>
 </body>
 </html>
