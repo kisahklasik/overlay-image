@@ -288,18 +288,21 @@ fabricCanvas.setDimensions({
 <script>
 document.getElementById("copyright").innerHTML = new Date().getFullYear();
 </script>
-<script>
-$('.download').live("click",function()
-{
-    var imgVal = $('#uploadFile').val();
-    if(imgVal=='')
-    {
-        alert("empty input file");
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#download').bind("click",function() 
+    { 
+        var imgVal = $('#uploadImage').val(); 
+        if(imgVal=='') 
+        { 
+            alert("empty input file"); 
 
-    }
-    return false;
+        } 
+        return false; 
 
+    }); 
 });
-</script>
+</script> 
+
 </body>
 </html>
