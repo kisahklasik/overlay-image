@@ -193,22 +193,15 @@ Auto
 <p class="card-text">Tambahkan tampilan yang disesuaikan ke profil Facebook hanya dalam beberapa langkah. Buat bingkai disini untuk teman dan pengikut Anda menggunakan Twibbon kami.</p>
 <p><canvas id="c"></canvas></p>
 <p>
-<form class="row g-3">
+<form class="row g-3" name="file" action="#" onsubmit="return validateForm()" method="post" required>
 <div class="col-auto">
 <label for="formFile" class="form-label">Default file input example</label>
-<input class="form-control" type="file" id="uploadFile">
+<input class="form-control" name="image" type="file" id="uploadFile">
 <input type="file" id="uploadBtn" style="display: none">
 </div>
 <div class="col-auto">
-<button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+<button id="download" type="submit" class="btn btn-primary mb-3">DOWNLOAD</button>
 </div>
-</form>
-    
-<form name="file" action="#" onsubmit="return validateForm()" method="post" required>
-<input type="file" id="uploadFile" name="image" accept="image/png, image/jpeg" />
-<input type="file" id="uploadBtn" style="display: none">
-<br>
-<button class="btn btn-primary" id="download">DOWNLOAD</button>
 </form>
 </p>
 </div>
