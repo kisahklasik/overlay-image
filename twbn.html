@@ -200,7 +200,7 @@ Auto
 <input type="file" id="uploadBtn" style="display: none">
 </div>
 <div class="col-auto">
-<button id="download" type="submit" class="btn btn-primary mb-3">DOWNLOAD</button>
+<button name="download" id="download" type="submit" class="btn btn-primary mb-3">DOWNLOAD</button>
 </div>
 </form>
 </p>
@@ -291,9 +291,9 @@ fabricCanvas.setDimensions({
 document.getElementById("copyright").innerHTML = new Date().getFullYear();
 </script>
 <script>
-$('.upload').live("click",function()
+$('.download').live("click",function()
 {
-    var imgVal = $('#uploadImage').val();
+    var imgVal = $('#uploadFile').val();
     if(imgVal=='')
     {
         alert("empty input file");
