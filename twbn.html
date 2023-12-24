@@ -196,8 +196,8 @@ Auto
 <form class="row g-3">
 <div class="col-auto">
 <label for="formFile" class="form-label">Pastikan gambar yang di upload memiliki ukuran.</label>
-<input class="form-control" name="image" type="file" id="uploadFile" accept="image/png, image/jpeg">
-<input type="file" id="uploadBtn" style="display: none" name="file" onsubmit="return validateUpload()" required>
+<input class="form-control" type="file" id="uploadFile" accept="image/png, image/jpeg">
+<input type="file" id="uploadBtn" style="display: none">
 </div>
 <div class="col-auto">
 <button id="download" type="submit" class="btn btn-primary mb-3">DOWNLOAD</button>
@@ -289,15 +289,6 @@ fabricCanvas.setDimensions({
 </script>
 <script>
 document.getElementById("copyright").innerHTML = new Date().getFullYear();
-</script>
-<script>
-function validateUpload() {
-  var x = document.uploads["file"]["image"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
 </script>
 </body>
 </html>
