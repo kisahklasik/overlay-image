@@ -56,7 +56,7 @@ Auto
 <div class="container py-4">
 <header class="pb-3 mb-4 border-bottom">
 <a href="./" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-<span class="fs-4"><i class="bi bi-tencent-qq" style="font-size: 2rem;"></i> <strong>KISAHKLASIK</strong></span>
+<span class="fs-4"><i class="bi bi-tencent-qq" style="font-size: 2rem;"></i> <strong>SELALUSALAH.VERCEL.APP</strong></span>
 </a>
 </header>
 
