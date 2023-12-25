@@ -10,7 +10,7 @@ const resultPara = document.querySelector('.result');
 btn.addEventListener('click', () => {
 navigator.share(shareData)
 .then(() =>
-resultPara.textContent = 'Twibbon shared successfully'
+resultPara.textContent = 'Twibbon berhasil dibagikan.'
 )
 .catch((e) =>
 resultPara.textContent = 'Error: ' + e
