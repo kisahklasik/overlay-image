@@ -99,13 +99,6 @@ Auto
 </div>
 </div>
 
-
-<div id="alertError" class="alert hidden" role="alert">
-  <span class="closebtn">&times;</span>  
-  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
-</div>
-
-
 <footer class="pt-3 mt-4 text-body-secondary border-top">
 Copyright &copy; <span id="copyright"></span> <a href="https://www.facebook.com/bungferry.wa" class="text-decoration-none">Ferry Ayunda</a>.
 </footer>
