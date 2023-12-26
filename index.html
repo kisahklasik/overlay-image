@@ -127,6 +127,7 @@ fabricCanvas.setDimensions({
 document.getElementById("copyright").innerHTML = new Date().getFullYear();
 </script>
 <script type="text/javascript">
+document.getElementById("alertError").innerHTML = "";
 $(document).ready(function() {
 $('#download').bind("click",function() 
 { 
@@ -135,8 +136,6 @@ if(imgVal=='')
 { 
 // alert("Anda belum menambahkan gambar! yakin untuk mengunduh?"); 
 
-// clear the contents of the container
-document.getElementById("alertError").innerHTML = "";
 // inject the new alert message
 document.getElementById("alertError").innerHTML =
   "Anda belum menambahkan gambar! yakin untuk mengunduh?";
