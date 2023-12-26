@@ -105,8 +105,15 @@ $('#download').bind("click",function()
 var imgVal = $('#uploadFile').val(); 
 if(imgVal=='') 
 { 
-alert("Error!\nTidak ada file yang dipilih! Lanjutkan Download?"); 
-  
+// alert("Error!\nTidak ada file yang dipilih! Lanjutkan Download?"); 
+Swal.fire({
+  title: "Error!",
+  text: "Tidak ada file yang dipilih! Lanjutkan Download?",
+  imageUrl: "badut.png",
+  imageWidth: 1024,
+  imageHeight: 1024,
+  imageAlt: "Preview Twibbon"
+});
 } 
 return false; 
 
