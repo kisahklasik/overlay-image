@@ -100,7 +100,7 @@ Auto
 </div>
 
 <!--
-<div id="alertError" class="alert">
+<div id="alertError" class="alert" role="alert">
   <span class="closebtn">&times;</span>  
   <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
 </div>
