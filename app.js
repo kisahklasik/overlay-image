@@ -70,12 +70,12 @@ Auto
 <p>
 <div class="mb-3">
 <label for="formFile" class="form-label">Pastikan gambar yang di upload memiliki ukuran.</label>
-<input class="form-control" name="image" type="file" id="uploadFile" accept="image/png, image/jpeg">
+<input class="form-control" type="file" id="uploadFile" accept="image/png, image/jpeg">
 <input type="file" id="uploadBtn" style="display: none">
 </div>
 </p>
 <p>
-<button name="download" id="download" type="submit" class="btn btn-primary mb-3">DOWNLOAD</button>
+<button id="download" class="btn btn-primary mb-3">DOWNLOAD</button>
 </p>
 </div>
 </div>
