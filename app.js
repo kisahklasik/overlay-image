@@ -74,6 +74,7 @@ Auto
 <input type="file" id="uploadBtn" style="display: none">
 </div>
 </p>
+<p id="error"></p>
 <p>
 <button id="download" class="btn btn-primary mb-3">DOWNLOAD</button>
 </p>
@@ -94,7 +95,6 @@ Auto
 </ol>
 </p>
 <p class="result"></p>
-<button onclick="window.print()">Print this page</button>
 </div>
 </div>
 </div>
