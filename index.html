@@ -133,8 +133,14 @@ $('#download').bind("click",function()
 var imgVal = $('#uploadFile').val(); 
 if(imgVal=='') 
 { 
-alert("Anda belum menambahkan gambar! yakin untuk mengunduh?"); 
+// alert("Anda belum menambahkan gambar! yakin untuk mengunduh?"); 
 
+// clear the contents of the container
+document.getElementById("alertError").innerHTML = "";
+// inject the new alert message
+document.getElementById("alertError").innerHTML =
+  "Anda belum menambahkan gambar! yakin untuk mengunduh?";
+  
 } 
 return false; 
 
