@@ -94,6 +94,7 @@ Auto
 </ol>
 </p>
 <p class="result"></p>
+<button onclick="window.print()">Print this page</button>
 </div>
 </div>
 </div>
