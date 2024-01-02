@@ -1,7 +1,7 @@
 let shareData = {
 title: 'Twibbon Generator',
 text: 'Komunitas Badut Indonesia',
-url: 'https://selalusalah.vercel.app/',
+url: 'https://bungferry.netlify.app/',
 }
 
 const btn = document.querySelector('em');
