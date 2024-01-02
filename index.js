@@ -55,7 +55,7 @@ Auto
 <main>
 <div class="container py-4">
 <header class="pb-3 mb-4 border-bottom">
-<a href="./" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+<a href="https://bungferry.netlify.app/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
 <span class="fs-4"><i class="bi bi-tencent-qq" style="font-size: 2rem;"></i> <strong>BUNGFERRY.NETLIFY.APP</strong></span>
 </a>
 </header>
