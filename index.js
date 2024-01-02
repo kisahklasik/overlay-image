@@ -77,7 +77,7 @@ Auto
 </p>
 -->
 <p>
-<input type="file" id="uploadFile" accept="image/png, image/jpeg" hidden/>
+<input type="file" id="uploadFile" accept="image/png, image/jpeg"/>
 <input type="file" id="uploadBtn" style="display: none">
 <label class="btn btn-secondary" for="fileInput">Pilih file</label>
 </p>
