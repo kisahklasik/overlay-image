@@ -67,12 +67,19 @@ Auto
 <h5 class="card-title">TWIBBON GENERATOR</h5>
 <p class="card-text">Tambahkan tampilan yang disesuaikan ke profil Facebook hanya dalam beberapa langkah. Buat bingkai disini untuk teman dan pengikut Anda menggunakan Twibbon kami.</p>
 <p><canvas id="c"></canvas></p>
+<!--
 <p>
 <div class="mb-3">
 <label for="formFile" class="form-label">Pastikan gambar yang di upload memiliki ukuran.</label>
 <input class="form-control" type="file" id="uploadFile" accept="image/png, image/jpeg">
 <input type="file" id="uploadBtn" style="display: none">
 </div>
+</p>
+-->
+<p>
+<input type="file" id="uploadFile" accept="image/png, image/jpeg" hidden/>
+<input type="file" id="uploadBtn" style="display: none">
+<label class="btn black" for="fileInput">Pilih file</label>
 </p>
 <p>
 <button id="download" class="btn btn-primary mb-3">DOWNLOAD</button>
